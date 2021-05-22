@@ -11,6 +11,8 @@ if ($null -eq (Get-Command -Name choco.exe -ErrorAction SilentlyContinue)) {
 Write-Host  "Intstalling minimal setup"
 & choco install `
     7zip `
+    winrar `
+    vlc `
     cascadia-code-nerd-font `
     chocolateygui `
     git `
@@ -21,6 +23,16 @@ Write-Host  "Intstalling minimal setup"
     pwsh `
     sysinternals `
     which `
+    keepass `
+    vscode `
+    adobereader `
+    teamviewer `
+    googlechrome `
+    adblockpluschrome `
+    greenshot `
+    thunderbird `
+    truecrypt `
+    avirafreeantivirus `
     -y
 
 
@@ -38,34 +50,21 @@ if ((Read-Host "Install dev tools: (y/N)").ToLower() -eq 'y') {
         nswagstudio `
         postman `
         sudo `
-        vscode `
+        visualstudio2019community `
+        visualstudio2019-workload-netweb `
+        jetbrainstoolbox `
+
         -y
 }
 
 if ((Read-Host "Install paid tools: (y/N)").ToLower() -eq 'y') {
     & choco install `
-        1password `
-        camtasia `
-        office365proplus `
-        snagit `
-        visualstudio2019enterprise `
-        -y
-}
-
-if ((Read-Host "Install gaming apps: (y/N)").ToLower() -eq 'y') {
-    & choco install `
-        epicgameslauncher `
-        steam-client `
         -y
 }
 
 if ((Read-Host "Install other apps: (y/N)").ToLower() -eq 'y') {
     & choco install `
-        logitech-camera-settings `
-        logitech-options `
-        microsoft-teams `
         paint.net `
-        obs-studio `
-        obs-virtualcam `
+        jdownloader `
         -y
 }
