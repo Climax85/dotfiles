@@ -25,7 +25,6 @@ Write-Host  "Intstalling minimal setup"
     which `
     keepass `
     vscode `
-    adobereader `
     teamviewer `
     googlechrome `
     adblockpluschrome `
