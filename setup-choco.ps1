@@ -32,7 +32,7 @@ Write-Host  "Intstalling minimal setup"
     thunderbird `
     truecrypt `
     avirafreeantivirus `
-    googledrive `
+    google-backup-and-sync `
     -y
 
 
